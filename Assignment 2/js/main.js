@@ -7,7 +7,8 @@ $(document).ready(function() {
         xhr.onload = function (){
 
         document.getElementById('content').innerHTML = xhr.responseText;
-        $("#content").animate({width: "toggle"});
+        $("#content").hide();
+        $("#content").animate({height: "toggle"})
     }
         xhr.open("GET", 'prospect.html', true);
         xhr.send();
@@ -18,6 +19,7 @@ $(document).ready(function() {
     $('#convert').click(function(){
         xhr.onload = function (){
          document.getElementById('content').innerHTML = xhr.responseText;
+         $("#content").hide();
          $("#content").animate({height: "toggle"});}
 
          xhr.open("GET", 'convert.html', true);
@@ -29,6 +31,7 @@ $(document).ready(function() {
      $('#retain').click(function(){
         xhr.onload = function (){
         document.getElementById('content').innerHTML = xhr.responseText;
+          $("#content").hide();
          $("#content").animate({height: "toggle"});
         }
          xhr.open("GET", 'retain.html', true);
