@@ -19,8 +19,13 @@ function ajaxMethod(){$.ajax({
   url: "team.json",
   type: "GET",
   //a callback function that would display content if the data from the json file was successfully retrieved
+  beforeSend: function() {                              
+    $('#team').append("<h1>LOADING...</h1>") ;   
+  },
+  complete: function() {                               
+    $('#team').hide(3000);                              
+  },
   success: function (data){ 
-    $('#team').append("<h1>LOADING...</h1>").hide(3000);
     $('#content').append('<div id="newteam"></div>');
     $('#newteam').hide();
     //using the each function to iterate through the data in the json array
