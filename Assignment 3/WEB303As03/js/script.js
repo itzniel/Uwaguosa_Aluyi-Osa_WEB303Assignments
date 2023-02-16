@@ -16,7 +16,7 @@ function jsonMethod(){$.getJSON("team.json").done( function(data){
 //The $.ajax method
 function ajaxMethod(){$.ajax({
   dataType: "json",
-  url: "team.json",
+  url: "tem.json",
   type: "GET",
   //a callback function that would display content if the data from the json file was successfully retrieved
   beforeSend: function() {                              
@@ -43,7 +43,12 @@ function ajaxMethod(){$.ajax({
   },
   //a callback function that would display content if retrieving data was unsuccessful
 error: function(){
-      $('#team').append("The content could not be retrieved")
+  $('#content').append('<div id="error"></div>')
+  $('#error').hide();
+      $('#error').append("The content could not be retrieved");
+      setTimeout (function(){
+        $('#error').show(200);
+       }, 3000);
   }
 }
 ); 
