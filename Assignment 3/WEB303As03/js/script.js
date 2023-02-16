@@ -16,7 +16,7 @@ function jsonMethod(){$.getJSON("team.json").done( function(data){
 //The $.ajax method
 function ajaxMethod(){$.ajax({
   dataType: "json",
-  url: "tem.json",
+  url: "team.json",
   type: "GET",
   //a callback function that would display content if the data from the json file was successfully retrieved
   beforeSend: function() {                              
