@@ -1,7 +1,8 @@
 /*
-    Assignment 05
-    Author's Name: Nihar Rajanikant Sadhu
-    Date: 2023-02-26
+    Author's Name: Uwaguosa Aluyi-Osa
+    Assignment5
+    Student ID: 0817788
+    Date: 01-03-2023
 */
 
 $("document").ready(function () {
@@ -10,33 +11,35 @@ $("document").ready(function () {
     class ContentItem {
         
         
-        constructor(id, f_name, description, category_genre) {
+        constructor(id, fName, description, categoryGenre) {
             this.id = id;
-            this.f_name = f_name;
+            this.fName = fName;
             this.description = description;
-            this.category_genre = category_genre;
+            this.categoryGenre = categoryGenre;
         }
 
-        updateContentItem(id, f_name, description, category_genre) {
+        updateContentItem(id, fName, description, categoryGenre) 
+        {
 
             if (this.id === id) {
-                if (f_name) {
-                    this.f_name = f_name;
+                if (fName) {
+                    this.fName = fName;
                 }
                 if (description) {
                     this.description = description;
                 }
-                if (category_genre) {
-                    this.category_genre = category_genre;
+                if (categoryGenre) {
+                    this.categoryGenre = categoryGenre;
                 }
             }
         }
 
-        toString() {
+        toString()
+        {
             let content = `<div class="content-item-wrapper" id="content-item-id${this.id}">`;
-            content += `<h2>${this.f_name}</h2>`;
+            content += `<h2>${this.fName}</h2>`;
             content += `<p>${this.description}</p>`;
-            content += `<div>${this.category_genre}</div>`;
+            content += `<div>${this.categoryGenre}</div>`;
             content += `</div>`;
             return content;
         }
@@ -50,9 +53,10 @@ $("document").ready(function () {
         new ContentItem(4, 'Shazam!', 'A 2019 superhero film based on the DC Comics character of the same name.', 'Action')
     ];
 
-    for (let i = 0; i < array.length; i++) {
-        const cItem = array[i];
-        const itemHtml = cItem.toString();
+    for (let i = 0; i < array.length; i++)
+     {
+        const itemContent = array[i];
+        const itemHtml = itemContent.toString();
         $("#content-item-list").append(itemHtml);
     }
 
@@ -66,18 +70,19 @@ $("document").ready(function () {
 
       // Button to update an existing ContentItem successfully
     $('#update-successful').on('click', function () {
-        const itemToUpdate = array[0];
-        itemToUpdate.updateContentItem('The Dark Knight Rises', 'A 2012 superhero film directed by Christopher Nolan, based on the DC Comics character Batman.', 'Action');
-        const updatedHtml = itemToUpdate.toString();
-        $('#content-item-id0').replaceWith(updatedHtml);
+        const itemUpdate = array[0];
+        itemUpdate.updateContentItem('The Dark Knight Rises', 'A 2012 superhero film directed by Christopher Nolan, based on the DC Comics character Batman.', 'Action');
+        const updated = itemUpdate.toString();
+        $('#content-item-id0').replaceWith(updated);
     });
 
     // Button to update an existing ContentItem unsuccessfully
-    $('#update-unsuccessful').on('click', function () {
-        const itemToUpdate = array[1];
-        itemToUpdate.updateContentItem(null, null, null); // Passing null to all arguments to trigger the error
-        const updatedHtml = itemToUpdate.toString();
-        $('#content-item-id1').replaceWith(updatedHtml);
+    $('#update-unsuccessful').on('click', function ()
+     {
+        const itemUpdate = array[1];
+        itemUpdate.updateContentItem(null, null, null); // Passing null to all arguments to trigger the error
+        const updated = itemUpdate.toString();
+        $('#content-item-id1').replaceWith(updated);
     });
 
     // Button styling
