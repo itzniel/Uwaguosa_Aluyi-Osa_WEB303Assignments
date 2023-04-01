@@ -1,0 +1,62 @@
+{
+  "characters": [
+    {
+      "fname": "Harry",
+      "lname": "Porter",
+      "gender": "Male",
+      "age": 17,
+      "occupation": "Wizard",
+      "specialAbility": "Parseltongue"   
+    },
+    {
+      "fname": "Hermione",
+      "lname": "Granger",
+      "gender": "Female",
+      "age": 17,
+      "occupation": "Witch",
+      "specialAbility": "Extensive knowledge and intellect"
+    },
+    {
+      "fname": "Ron",
+      "lname": "Weasley",
+      "gender": "Male",
+      "age": 17,
+      "occupation": "Wizard",
+      "specialAbility": "Chess skills"
+    },
+
+    {
+      "fname": "Frodo",
+      "lname": "Baggins",
+      "gender": "Male",
+      "age": 33,
+      "occupation": "Hobbit",
+      "specialAbility": "Ring bearer"
+    },
+    {
+      "fname": "Katniss",
+      "lname": "Everdeen",
+      "gender": "Female",
+      "age": 19,
+      "occupation": "Huntress",
+      "specialAbility": "Archery and survival skills"
+    },
+    {
+      "fname": "Gandalf",
+      "lname": "",
+      "gender": "Male",
+      "age": 65,
+      "occupation": "Wizard",
+      "specialAbility": "Magic, wisdom and guidance"
+    },
+  
+    {
+      "fname": "Bilbo",
+      "lname": "Baggins",
+      "gender": "Male",
+      "age": 111,
+      "occupation": "Hobbit",
+      "specialAbility": "Ring finder"
+    }
+  ]
+}
