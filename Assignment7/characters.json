@@ -1,0 +1,62 @@
+./{
+  "characters": [
+    {
+      "fname": "Harry",
+      "lname": "Porter",
+      "gender": "Male",
+      "dob": "1999-09-20",
+      "occupation": "Wizard",
+      "specialAbility": "Parseltongue"   
+    },
+    {
+      "fname": "Hermione",
+      "lname": "Granger",
+      "gender": "Female",
+      "dob": "1993-02-25",
+      "occupation": "Witch",
+      "specialAbility": "Extensive knowledge and intellect"
+    },
+    {
+      "fname": "Ron",
+      "lname": "Weasley",
+      "gender": "Male",
+      "dob": "1997-05-25",
+      "occupation": "Wizard",
+      "specialAbility": "Chess skills"
+    },
+
+    {
+      "fname": "Frodo",
+      "lname": "Baggins",
+      "gender": "Male",
+      "dob": "1960-05-2",
+      "occupation": "Hobbit",
+      "specialAbility": "Ring bearer"
+    },
+    {
+      "fname": "Katniss",
+      "lname": "Everdeen",
+      "gender": "Female",
+      "dob": "1980-11-25",
+      "occupation": "Huntress",
+      "specialAbility": "Archery and survival skills"
+    },
+    {
+      "fname": "Gandalf",
+      "lname": "De",
+      "gender": "Male",
+      "dob": "1955-12-5",
+      "occupation": "Wizard",
+      "specialAbility": "Magic, wisdom and guidance"
+    },
+  
+    {
+      "fname": "Bilbo",
+      "lname": "Baggins",
+      "gender": "Male",
+      "dob": "1911-05-21",
+      "occupation": "Hobbit",
+      "specialAbility": "Ring finder"
+    }
+  ]
+}
